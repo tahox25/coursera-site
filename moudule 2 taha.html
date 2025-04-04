@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Menu</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      padding: 30px 20px;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      color: #2c3e50;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .menu-item {
+      border-radius: 10px;
+      border: 1px solid #bbb;
+      background-color: #fff;
+      padding: 20px;
+      width: 100%;
+      max-width: 300px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    .menu-item h2 {
+      color: white;
+      text-align: center;
+      padding: 10px;
+      border-radius: 8px 8px 0 0;
+      margin-bottom: 15px;
+    }
+
+    #chicken {
+      background-color: #fdecea;
+    }
+
+    #chicken h2 {
+      background-color: #e74c3c;
+    }
+
+    #beef {
+      background-color: #fce9e9;
+    }
+
+    #beef h2 {
+      background-color: #c0392b;
+    }
+
+    #sushi {
+      background-color: #fff9e6;
+    }
+
+    #sushi h2 {
+      background-color: #f39c12;
+    }
+
+    .menu-item p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .back-to-top {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .back-to-top a {
+      background-color: #3498db;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-to-top a:hover {
+      background-color: #2980b9;
+    }
+
+    @media (max-width: 768px) {
+      .menu-item {
+        width: 45%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .menu-item {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body id="top">
+  <header>
+    <h1>Our Menu</h1>
+  </header>
+
+  <main>
+    <div class="menu-item" id="chicken">
+      <h2>Chicken</h2>
+      <p>Grilled chicken served with seasonal vegetables and our special sauce.</p>
+      <div class="back-to-top"><a href="#top">Back to Top</a></div>
+    </div>
+
+    <div class="menu-item" id="beef">
+      <h2>Beef</h2>
+      <p>Succulent beef roast, slow-cooked and seasoned to perfection.</p>
+      <div class="back-to-top"><a href="#top">Back to Top</a></div>
+    </div>
+
+    <div class="menu-item" id="sushi">
+      <h2>Sushi</h2>
+      <p>Freshly prepared sushi rolls with a variety of fillings and toppings.</p>
+      <div class="back-to-top"><a href="#top">Back to Top</a></div>
+    </div>
+  </main>
+</body>
+</html>
